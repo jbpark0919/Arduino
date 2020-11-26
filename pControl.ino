@@ -15,7 +15,7 @@
 #define _DIST_MAX 430 //[0711] 측정 최댓값
 
 // Distance sensor
-#define _DIST_ALPHA 0.5 // [3095] ema필터의 alpha 값을 설정
+#define _DIST_ALPHA 0.6 // [3095] ema필터의 alpha 값을 설정
 
 // Servo range
 #define _DUTY_MIN 1200  // [1615] 서보 제어 펄스 폭: 최고 각도
@@ -32,7 +32,7 @@
 #define _INTERVAL_SERIAL 100 // [3078] Serial제어주기 (ms)
 
 // PID parameters
-#define _KP 0.6 //[0711] 비례이득
+#define _KP 0.7 //[0711] 비례이득
 
 //////////////////////
 // global variables //
