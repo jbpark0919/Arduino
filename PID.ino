@@ -34,9 +34,9 @@
 #define DELAY_MICROS  1500
 
 // PID parameters
-#define _KP 0.7 //[0711] 비례이득
-#define _KI 0.00107
-#define _KD 50
+#define _KP 0.6 //[0711] 비례이득
+#define _KI 0.005
+#define _KD 97
 //////////////////////
 // global variables //
 //////////////////////
@@ -71,7 +71,8 @@ void setup() {
 // initialize GPIO pins for LED and attach servo 
  pinMode(PIN_LED,OUTPUT);
  digitalWrite(PIN_LED, 0);
- myservo.attach(PIN_SERVO); 
+ myservo.attach(PIN_SERVO);
+ iterm = 0;
 
 
 // initialize global variables
